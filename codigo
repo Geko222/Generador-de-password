@@ -1,12 +1,14 @@
 import random 
 
-letras = "QWERTYUIOPASDFGHJKLZXCVBNM"
+letras = "QWERTYUIOPASDFGHJKLZXCVBNMÑqwertyuiopasdfghjklñzxcvbnm"
 numeros = "1234567890"
+caracteres = "@#%&?¿.<>"
 
-conjunto = letras+numeros
-longitud = 16
+conjunto = letras+numeros+caracteres
+longitud = 10  #AQUI AJUSTAS LA LONGITUD DE LA CONTRASEÑA
 
-for _ in range(100):
+for _ in range(1):  # AQUI AJUSTAS CUANTAS CONTRASEÑAS QUIERES
     code = random.sample(conjunto, longitud)
     codigo= "".join(code)
+    print ("Tu contraseña es:")
     print(codigo)
