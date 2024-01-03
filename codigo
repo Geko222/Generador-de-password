@@ -1,0 +1,12 @@
+import random 
+
+letras = "QWERTYUIOPASDFGHJKLZXCVBNM"
+numeros = "1234567890"
+
+conjunto = letras+numeros
+longitud = 16
+
+for _ in range(100):
+    code = random.sample(conjunto, longitud)
+    codigo= "".join(code)
+    print(codigo)
